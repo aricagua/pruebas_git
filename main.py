@@ -1,11 +1,15 @@
 from saludo import saludar as sa
+from despedidas import despedida as de
 v = True
 while v:
-	n = int(input('*******Bienvenido al programa que te saluda*******\n Que quieres hacer?\n1)SALUDAR\n0)SALIR\n'))
+	n = int(input('*-*-*- BIENVENIDO AL PROGRAMA QUE TE SALUDA, DESPIDE Y DESEA SUERTE -*-*-*\n Que quieres hacer?\n1)SALUDAR\n2)DESPEDIR\n0)SALIR\n'))
 	if n == 0:
 		v = False
-	if n == 1:
+	elif n == 1:
 		v = False
 		sa()
+	elif n == 2:
+		v = False
+		de()
 
 
